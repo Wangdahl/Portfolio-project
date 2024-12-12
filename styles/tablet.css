@@ -1,0 +1,217 @@
+
+
+@media (max-width: 1200px) {
+    
+    
+    #skill-h3 {
+        margin-left: auto;
+    }
+    #tool-h3 {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 920px) {
+    
+    
+    #resume h2, #resume button {
+        grid-column: 1 / span 3;
+    }
+
+    #hello {
+        font-size: 7rem;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .writing-folio a {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    main {
+        margin: 0 2rem
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+
+    #resume {
+        display: block; 
+    }
+
+    #cv-btn {
+        font-size: 1rem;
+    }
+    #portfolio {
+        margin-top: 2rem;
+    }
+    
+    .toggle-heading {
+        display: block;
+        text-align: center;
+        margin: 0.2rem auto;
+        width: fit-content;
+        padding: 0.1rem;
+    }
+
+    #connect ul li a, #connect h2, #portfolio h2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hide-me {
+        display: none;
+    }
+    .mobile-toggle-section {
+        display: block;
+    }
+
+    #my-skills-mobile, #experience-mobile, #toolbox-mobile {
+        display: none;
+        margin: 1rem 0;
+        padding: 1rem;
+        background-color: #f9f9f9;
+    }
+
+    #my-skills-mobile.visible, #experience-mobile.visible, #toolbox-mobile.visible {
+        display: block;
+    }
+
+    #toolbox-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #experience p, #my-skills p, #toolbox-mobile p {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    #experience li, #my-skills li, #toolbox-mobile li {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding: 0.3rem;
+    }
+
+    #toolbox-mobile {
+        display: block;
+        text-align: start;
+        margin: 0 auto;
+    }
+
+    #experience-mobile p, #my-skills-mobile p, #toolbox p {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    #experience-mobile li, #my-skills-mobile li, #toolbox li {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding: 0.3rem;
+    }
+
+}
+
+@media (max-width: 450px){
+    .head-nav {
+        display: none;
+    }
+
+    /* Show mobile menu */
+    .head-nav-mobile {
+        display: block;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: -1rem;
+        right: 1.5rem;
+    }
+
+    .menu-checkbox {
+        display: none;
+    }
+
+    .nav-ul-mob {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #FCFCFC;
+        margin: 1rem 2rem;
+        padding: 0;
+        position: absolute;
+        top: 1rem;
+        right: -0.7rem;
+    }
+
+    .menu-checkbox:checked ~ .nav-ul-mob {
+        display: flex;
+    }
+
+    #hello {
+        font-size: 5rem;
+        padding-top: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner h2 {
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+    #cv-btn {
+        margin-top: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    #toolbox {
+        display: block;
+        text-align: start;;
+        margin: 0 auto;
+    }
+    
+    #portfolio h2 {
+        margin: 3rem 0 0.5rem;
+    }
+    .writing-folio {
+        margin-top: 1rem;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    #hello {
+        font-size: 4rem;
+    }
+
+    #connect ul li a {
+        font-size: 0.9rem;
+    }
+
+    #connect .far, #connect .fab {
+        display: none;
+    }
+
+    .writing-folio a {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melker Wångdahl</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Matter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Cpath d='M12 4v16m-6-6 6 6 6-6'/%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+<body>
+    <header>
+        <nav class="head-nav" aria-label="Main Navigation">
+            <!-- <p id="nav-p">M.W</p> -->
+            <ul class="nav-ul">
+                <li><a href="#resume">What I do</a></li>
+                <li><a href="#portfolio">My work</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav>
+
+        <!--Mobile menu-->
+
+        <nav class="head-nav-mobile" aria-label="Main Navigation">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-ul-mob">
+                <li><a href="#resume">What I do</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Introduction section-->
+        <section class="banner">
+            <h1><span id="hello">Hallå!</span><br> My name is Melker Wångdahl.</h1>
+            <h2>I manipulate search engines, convert with copy and build web projects.</h2>
+        </section>
+
+        <!--Resume / skills section-->
+        <section id="resume">
+            <h2>What I do</h2>
+            <button id="cv-btn">Download resumé <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><path d="M12 4v16m-6-6 6 6 6-6"></path></svg></button>
+            <p id="intro">I´m a digital jack of all trades from Sweden with 5 years of experience in SEO, content- and copywriting. My roots are in affiliate marketing and I run a small portfolio of content websites. The project made me quite adept at keeping the search engines happy as well as a wide knowledge base in WordPress development. Additionally, I am equipped with a degree in Product Management complemented with certifications in Copywriting and SEO.</p>
+
+                <h3 class="toggle-heading hide-me" id="skill-h3" data-target="my-skills">Skills <i class="fas fa-chevron-down"></i></h3>
+                <h3 class="toggle-heading hide-me" id="exp-h3" data-target="experience">Experience <i class="fas fa-chevron-down"></i></h3>
+                <h3 class="toggle-heading hide-me" id="tool-h3" data-target="toolbox">Toolbox <i class="fas fa-chevron-down"></i></h3>
+
+                <!--Skills-->   
+                <div class="content hide-me" id="my-skills">
+                    <p>SEO</p>
+                    <ul>
+                        <li>Affiliate marketing has given me a wide base in SEO and I excel in keyword analysis, competitor analysis and on-page optimization.</li>
+                        <li>Certified SEO skills by Pineberry via SEO-cert.se.</li>
+                    </ul>
+                    <p>SEM</p>
+                    <ul>
+                        <li>Experience of setting up Google Ads, managing budgets and optimizing for good ROI.</li>
+                    </ul>
+                    <p>Content & Copywriting</p>   
+                    <ul>   
+                        <li>5 years of experience writing SEO-optimized texts in both Swedish and English.</li>
+                        <li>Completed copywriting course by Berghs School of Comunication.</li>
+                    </ul>
+                    <p>Analytics</p>    
+                    <ul> 
+                        <li>I have worked extensively with Search Console and know my way around Google Analytics.</li>
+                        <li>Basic skills in using Google Tag Manager.</li>
+                    </ul>
+                    <p>Web development</p>  
+                    <ul>    
+                        <li>Comprehensive experience working with WordPress including daily site management as well as developing websites from scratch.</li>
+                        <li>Solid base in HTML & CSS.</li>
+                    </ul>
+                    <p>Agile Project Management</p>   
+                    <ul>
+                        <li>Degree in Product Management with a focus on E-Commerce and digital platforms.</li>   
+                        <li>Trained in agile project methods, specifically using the Scrum framework.</li>
+                    </ul>
+                </div>
+
+                <!--Work experience-->            
+                <div class="content hide-me" id="experience">
+                    <p>Affiliate Marketing</p>
+                    <ul>
+                        <li>Self-employed 2019 - present</li>
+                        <li>Developed a portfolio of websites with a focus on content and organic traffic. Grew OddHikers.se from 5000 yearly users in 2020 to over 200000 in 2023.</li>
+                    </ul>
+                    <p>Freelance Editor, Content- and Copywriter</p>
+                    <ul>
+                        <li>Handheld Group, 2021 - present</li>
+                        <li>I am the writer and editor for RuggedInformer.com and have produced case studies for HandheldGroup.com.</li>
+                        <li>MilDef AB 2024</li>
+                        <li>Provided copywriting services on rugged hardware.</li>
+                    </ul>
+                    <p>Marketing Intern</p>
+                    <ul>
+                        <li>Handheld Group 2021</li>
+                        <li>Worked with SEO, translations, content creation, and web development.</li>
+                    </ul>
+                </div>
+                
+                <!--Tools-->
+                <div class="content hide-me" id="toolbox">
+                    <div>
+                        <p>I worked a lot with..</p>
+                        <ul>
+                            <li>SEMrush</li>
+                            <li>Google Search Console</li>
+                            <li>Google Analytics</li>
+                            <li>WordPress</li>
+                            <li>Trello</li>
+                            <li>Also Asked</li>
+                            <li>Answer The Public</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>I also have experience with..</p>
+                        <ul>
+                            <li>Screaming frog</li>
+                            <li>AHrefs</li>
+                            <li>Moz</li>
+                            <li>Google Ads</li>
+                            <li>Google Tag Manager</li>
+                            <li>Monday</li>
+                            <li>Magento</li>
+                            <li>Shopify</li>
+                        </ul>
+                    </div>
+                </div>  
+                
+            <!--MOBILE VERSION START-->
+            <div class="mobile-toggle-section">
+                <h3 class="toggle-heading" id="skill-h3-mobile" data-target="my-skills-mobile">Skills <i class="fas fa-chevron-down"></i></h3>
+                <div class="content" id="my-skills-mobile">
+                    <p>SEO</p>
+                    <ul>
+                        <li>Affiliate marketing has given me a wide base in SEO and I excel in keyword analysis, competitor analysis, and on-page optimization.</li>
+                        <li>Certified SEO skills by Pineberry via SEO-cert.se.</li>
+                    </ul>
+                    <p>SEM</p>
+                    <ul>
+                        <li>Experience of setting up Google Ads, managing budgets, and optimizing for good ROI.</li>
+                    </ul>
+                    <p>Content & Copywriting</p>
+                    <ul>
+                        <li>5 years of experience writing SEO-optimized texts in both Swedish and English.</li>
+                        <li>Completed copywriting course by Berghs School of Communication.</li>
+                    </ul>
+                    <p>Analytics</p>
+                    <ul>
+                        <li>Extensive experience with Search Console and Google Analytics.</li>
+                        <li>Basic skills in using Google Tag Manager.</li>
+                    </ul>
+                    <p>Web Development</p>
+                    <ul>
+                        <li>Comprehensive experience working with WordPress, including daily site management as well as developing websites from scratch.</li>
+                        <li>Solid base in HTML & CSS.</li>
+                    </ul>
+                    <p>Agile Project Management</p>
+                    <ul>
+                        <li>Degree in Product Management with a focus on E-Commerce and digital platforms.</li>
+                        <li>Trained in agile project methods, specifically using the Scrum framework.</li>
+                    </ul>
+                </div>
+
+                <h3 class="toggle-heading" id="exp-h3-mobile" data-target="experience-mobile">Experience <i class="fas fa-chevron-down"></i></h3>
+                <div class="content" id="experience-mobile">
+                    <p>Affiliate Marketing</p>
+                    <ul>
+                        <li>Self-employed 2019 - present</li>
+                        <li>Developed a portfolio of websites with a focus on content and organic traffic. Grew OddHikers.se from 5,000 yearly users in 2020 to over 200,000 in 2023.</li>
+                    </ul>
+                    <p>Freelance Editor, Content- and Copywriter</p>
+                    <ul>
+                        <li>Handheld Group, 2021 - present</li>
+                        <li>Writer and editor for RuggedInformer.com and producer of case studies for HandheldGroup.com.</li>
+                        <li>MilDef AB, 2024</li>
+                        <li>Provided copywriting services for rugged hardware.</li>
+                    </ul>
+                    <p>Marketing Intern</p>
+                    <ul>
+                        <li>Handheld Group, 2021</li>
+                        <li>Worked with SEO, translations, content creation, and web development.</li>
+                    </ul>
+                </div>
+
+                <h3 class="toggle-heading" id="tool-h3-mobile" data-target="toolbox-mobile">Toolbox <i class="fas fa-chevron-down"></i></h3>
+                <div class="content" id="toolbox-mobile">
+                    <div>
+                        <p>I worked a lot with..</p>
+                        <ul>
+                            <li>SEMrush</li>
+                            <li>Google Search Console</li>
+                            <li>Google Analytics</li>
+                            <li>WordPress</li>
+                            <li>Trello</li>
+                            <li>Also Asked</li>
+                            <li>Answer The Public</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>I also have experience with..</p>
+                        <ul>
+                            <li>Screaming Frog</li>
+                            <li>AHrefs</li>
+                            <li>Moz</li>
+                            <li>Google Ads</li>
+                            <li>Google Tag Manager</li>
+                            <li>Monday</li>
+                            <li>Magento</li>
+                            <li>Shopify</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio section-->
+        <section id="portfolio">
+            <h2>My work</h2>
+
+            <!--Contentwriting-->
+            <div class="writing-folio">
+                <p>I write for myself and for others. In English and in Swedish. Check out some of my work bellow.</p>
+                <ul>
+                    <li><a class="portfolio-link-1" href="https://www.handheldgroup.com/rugged-solutions/customer-solutions/rugged-tablets-enable-mobile-rtk-for-forest-inventory-management/" target="_blank">
+                        > HandheldGroup.com - Case study on mobile RTK solutions
+                    </a></li>
+                    <li><a href="https://www.handheldgroup.com/rugged-solutions/customer-solutions/speeding-up-vending-machine-maintenance/" target="_blank">
+                        > HandheldGroup.com - Case study on vending machine maintenance
+                    </a></li>
+                    <li><a href="https://www.ruggedinformer.com/handheld-launches-new-nautiz-x81/" target="_blank">
+                        > RuggedInformer.com - News post on the launch of Nauiz X81
+                    </a></li>
+                    <li><a href="https://www.ruggedinformer.com/the-suez-canal-blockage-and-the-rugged-supply-chain/" target="_blank">
+                        > RuggedInformer.com - News post on the Suez Canal blockage
+                    </a></li>
+                    <li><a href="https://swedishcoast.com/fjallbacka/" target="_blank">
+                        > SwedishCoast.com - Travel guide to Fjällbacka
+                    </a></li>
+                    <li><a href="https://swedishcoast.com/hallo/" target="_blank">
+                        > SwedishCoast.com - Travel guide to Hållö Island
+                    </a></li>
+                    <li><a href="https://oddhikers.se/vandringsguide-till-skierfeklippan-porten-till-sarek/" target="_blank">
+                        > OddHikers.se - Hiking guide to Skierfeklippan in Sarek
+                    </a></li>
+                    <li><a href="https://oddhikers.se/galdhopiggen/" target="_blank">
+                        > OddHikers.se - Hiking guide to Galdhöpiggen in Jotunheimen
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Connect section-->
+        <section id="connect">
+            <h2>Connect</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/melker-w%C3%A5ngdahl/" target="_blank"><i class="fab fa-linkedin"></i> in/melker-wångdahl</a></li>
+                <li><a href="mailto:melker.wangdahl@gmail.com"><i class="far fa-envelope" target="_blank"></i> melker.wangdahl@gmail.com</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+    <footer>
+        <nav class="foot-nav" aria-label="Footer Navigation"></nav>
+    </footer>
+</body>
+</html>
